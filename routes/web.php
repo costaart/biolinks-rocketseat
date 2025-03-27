@@ -6,11 +6,15 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LinkController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\BioLinkController;
 
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    if (auth()->check()) {
+        return redirect()->route('dashboard');
+    }
+    return redirect()->route('login');
 });
 
 Route::middleware('guest')->group(function() {
@@ -23,7 +27,7 @@ Route::middleware('guest')->group(function() {
 
 Route::middleware('auth')->group(function() {
     Route::get('/dashboard', DashboardController::class)->name('dashboard'); //Como usa invoke nao precisa declarar a classe
-    Route::get('/logout', LogoutController::class)->name('logout');
+    Route::post('/logout', LogoutController::class)->name('logout');
 
 
     Route::get('/links/create', [LinkController::class, 'create'])->name('links.create');
@@ -39,12 +43,10 @@ Route::middleware('auth')->group(function() {
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
-
-
-
-
-
 });
+
+// Precisa estar nessa ordem pois o laravel lê de cima para baixo, e por eliminação ele vai para o biolink
+Route::get('/{user:handler}', BioLinkController::class)->name('biolink');
 
 
 

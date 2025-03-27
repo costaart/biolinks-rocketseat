@@ -26,6 +26,7 @@ class ProfileRequest extends FormRequest
         return [
             'name' => ['required', 'string', 'min:3', 'max:30'],
             'description' => ['nullable', 'string', 'max:255'],
+            'photo' => ['nullable', 'image'],
             'handler' => ['nullable', 'unique:users,handler,' . $this->user()->id, new CheckHandler],
         ];
     }
