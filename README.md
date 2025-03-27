@@ -14,5 +14,25 @@ Este projeto foi desenvolvido com base no curso de Laravel da Rocketseat. O **Bi
 - [MySQL](https://www.mysql.com/) - Banco de dados relacional.
 - [daisyUI](https://daisyui.com/) - Biblioteca de componentes UI para Tailwind CSS.
 
+## Preview do Projeto
+
+- Registro:
+![Tela de Registro](public/images/screenshots/register.png)
+
+- Login:
+![Tela de Login](public/images/screenshots/login.png)
+
+- Dashboard:
+![Tela do Dashboard](public/images/screenshots/dashboard.png)
+
+- Perfil:
+![Tela de Perfil](public/images/screenshots/perfil.png)
+
+- URL Pública:
+![Tela de URL Pública](public/images/screenshots/url-publica.png)
+
+- Criar Link:
+![Tela de Criar Link](public/images/screenshots/criar-link.png)
+
 ---
 Desenvolvido durante o curso de Laravel da Rocketseat.
