@@ -16,23 +16,23 @@ Este projeto foi desenvolvido com base no curso de Laravel da Rocketseat. O **Bi
 
 ## Preview do Projeto
 
-- Registro:
-![Tela de Registro](public/images/screenshots/register.png)
+- **Registro**:  
+    ![Tela de Registro](public/images/screenshots/register.png){ width=600 }
 
-- Login:
-![Tela de Login](public/images/screenshots/login.png)
+- **Login**:  
+    ![Tela de Login](public/images/screenshots/login.png){ width=600 }
 
-- Dashboard:
-![Tela do Dashboard](public/images/screenshots/dashboard.png)
+- **Dashboard**:  
+    ![Tela do Dashboard](public/images/screenshots/dashboard.png){ width=600 }
 
-- Perfil:
-![Tela de Perfil](public/images/screenshots/perfil.png)
+- **Perfil**:  
+    ![Tela de Perfil](public/images/screenshots/perfil.png){ width=600 }
 
-- URL Pública:
-![Tela de URL Pública](public/images/screenshots/url-publica.png)
+- **URL Pública**:  
+    ![Tela de URL Pública](public/images/screenshots/url-publica.png){ width=600 }
 
-- Criar Link:
-![Tela de Criar Link](public/images/screenshots/criar-link.png)
+- **Criar Link**:  
+    ![Tela de Criar Link](public/images/screenshots/criar-link.png){ width=600 }
 
 ---
 Desenvolvido durante o curso de Laravel da Rocketseat.
